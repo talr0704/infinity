@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Infinity Run</title>
+    <meta name="description" content="name of game" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="names" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    x
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header class="navbar">
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="indextest.html">
+                <img id="logo" src="/img/infinitylogo.png" /> <!--הלוגו של המשחק שלכם-->
+                <p>Infinity Run</p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout">X</a>
+            <h1 class="headline">Infinity Run</h1>
+            <p>אפיון ופיתוח: טל רוזן,ענבל אזואלוס וזוהר לוטן</p>
+            <p>אופיין ופותח במסגרת פרויקט בקורסים:</p>
+            <p>סביבות לימוד אינטראקטיביות 1 + תכנות אינטראקציה ואנימציה 1</p>
+            <p>תשפ"ג</p>
+            <div>
+                <a href="https://www.hit.ac.il/" id="logohit"> <img id="logoOdot" src="/img/logo hit - telem (2).png" /></a>
+            </div>
+
+            <a href="https://www.hit.ac.il/telem/overview" id="fakoltalink"> הפקולטה לטכנולוגיות למידה</a>
+
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay">X</a>
+            <h1>הוראות משחק</h1>
+            <p>על מנת להתחמק מראמוס ולעזור לדמות לשוב הביתה</p>
+            <p>אספו את כל כדורי האנרגיה לפי ההוראה המוצגת מעלה</p>
+            <p>והתחמקו מכדורי האנרגיה עם התשובות הלא נכונות</p>
+            <p>לקפיצה לחצו על מקש הרווח</p>
+
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם -->
+            <iframe id="gameIframe" src="https://simmer.io/@tal0704/run" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
